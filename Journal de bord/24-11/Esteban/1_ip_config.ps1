@@ -29,8 +29,8 @@ Set-DnsClientServerAddress -InterfaceAlias $InterfaceAlias -ServerAddresses $nul
 New-NetIPAddress -InterfaceAlias $InterfaceAlias -IPAddress $IPAddress -PrefixLength $IPMask -DefaultGateway $Gateway
 Set-DnsClientServerAddress -InterfaceAlias $InterfaceAlias -ServerAddresses $DNS
 
-#########################################
+########################################
 # 3. Redémarrage
-#########################################
+########################################
 Write-Host "Redémarrage en cours..." -ForegroundColor Yellow
 Restart-Computer
